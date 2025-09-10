@@ -20,11 +20,6 @@ import seaborn as sns
 AUDIO_DIR = "audio_train/train"
 CSV_PATH = "train.csv"
 SAVE_DIR = "res/results"
-'''
-AUDIO_DIR = "/home/iluchenka_4756/YOLO/aud/wav_data/new_data/train"
-CSV_PATH = "/home/iluchenka_4756/YOLO/aud/wav_data/train_annotations.csv"
-SAVE_DIR = "/home/iluchenka_4756/YOLO/aud/wav_data/new_data/results_new_model"
-'''
 SAMPLE_RATE = 32000
 N_MELS = 128
 HOP_LENGTH = 512
@@ -269,3 +264,4 @@ model = EfficientNetAudio(num_classes=NUM_CLASSES)
 trained_model = train_model(
     model, train_loader, val_loader, num_epochs=70, max_lr=1e-3, device=DEVICE
 )
+
